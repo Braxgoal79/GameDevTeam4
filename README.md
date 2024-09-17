@@ -3,11 +3,11 @@
 # Team Members and Roles
 Braxton - Audio and Visuals
 Levi - Coding game interactions
-Jeremy - Coding Mechanics
+Jeremy - Coding game Mechanics
 # Overview of Game #1
 Call of Dusty top Down 2D
 # Overview of Game #2
-Sport Game undecided
+Horror Game
 
 # Images of Mockups
 
