@@ -5,7 +5,7 @@ Braxton - Audio and Visuals
 Levi - Coding game interactions
 Jeremy - Coding game Mechanics
 # Overview of Game #1
-Call of Duty top Down 2D
+Top Down Shooter 2D
 # Overview of Game #2
 
 
