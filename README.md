@@ -7,9 +7,24 @@ Jeremy - Coding game Mechanics
 # Overview of Game #1
 Call of Duty top Down 2D
 # Overview of Game #2
-Horror Game
+
 
 # Images of Mockups
 
 # Genere Prefrance
-Action/Sports
+
+
+# Core Gameplay Mechanics
+
+# Story and Setting
+
+# Art, Sound, and Design
+
+# Difficuty and progression
+
+# Technical Requirments
+
+# Team Rolls and Colaberatio
+
+# Target Audience
+
