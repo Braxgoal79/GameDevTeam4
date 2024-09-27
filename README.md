@@ -5,7 +5,7 @@ Braxton - Audio and Visuals
 Levi - Coding game interactions
 Jeremy - Coding game Mechanics
 # Overview of Game #1
-Top Down Shooter 2D
+Top Down Shooter The goal is to finish all the levels to get to your gold fish you get money and resources at the levels for enemys body which you can use to upgrade you things at you base.
 # Overview of Game #2
 
 
@@ -26,6 +26,8 @@ Top Down Shooter 2D
 # Difficuty and progression
 *As the levels progres there are more enemies and harder enemies with faster shooting weapons that deal more damage.
 
+# User Interface (UI) and User Experience (UX):
+*The controlls are wasd and a mouse to aim there will be a small mini map that shows were the enemys you've seen are and enemys that you could hear. There will be a very simple small craftying or upgrading system used to upgrade weapons. It will be a top down shooter.
 
 # Technical Requirments
 *We will use proccesing
