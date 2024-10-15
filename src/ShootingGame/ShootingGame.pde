@@ -26,6 +26,7 @@ void draw() {
     // You are playing the game!
     background(127);
     p1.display();
+    b1.display();
   }
 }
 

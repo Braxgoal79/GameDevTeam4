@@ -7,7 +7,7 @@ class Bullets {
 
   // Constructor
   Bullets() {
-    g1 = loadImage(" ");
+    g1 = loadImage("Bullet.png");
     x = width/2;
     y = height/2;
     w = 50;
