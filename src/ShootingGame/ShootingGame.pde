@@ -10,6 +10,7 @@ ArrayList<Enemy> enemy = new ArrayList<Enemy>();
 Player p1;
 Enemy e1;
 Bullets b1;
+Guns w1;
 boolean play;
 PImage start1;
 
@@ -21,6 +22,7 @@ void setup() {
   start1 = loadImage("StartPlayer.png");
   p1 = new Player();
   e1 = new Enemy();
+  w1 = new Guns();
 }
 void draw() {
   if (play == false) {
@@ -31,6 +33,7 @@ void draw() {
     p1.display();
     b1.display();
     e1.display();
+    w1.display();
   }
 }
 
