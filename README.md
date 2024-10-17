@@ -1,11 +1,11 @@
 # Team 4
 
 # Team Members and Roles
-Braxton - Audio and Visuals
-Levi - Coding game interactions
-Jeremy - Coding game Mechanics
-Penny - Coding and writing
-Stephen - Coding
+## Braxton - Audio and Visuals
+## Levi - Coding game interactions
+## Jeremy - Coding game Mechanics
+## Penny - Coding and writing
+## Stephen - Coding
 # Overview of Game #1
 Top Down Shooter The goal is to finish all the levels to get to your gold fish you get money and resources at the levels for enemys body which you can use to upgrade you things at you base.
 # Overview of Game #2
