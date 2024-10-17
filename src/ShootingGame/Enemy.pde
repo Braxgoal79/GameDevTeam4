@@ -1,4 +1,4 @@
-// Mr kapptie | 3 Oct 2024
+// Mr kapptie | 3 Oct 2024 | Levi Dorval |
 class Enemy {
   // Member Variables
   PImage g1;
@@ -9,9 +9,9 @@ class Enemy {
 
   // Constructor
   Enemy() {
-    //g1 = lodaImage("");
-    x = width/2;
-    y = height/2;
+    g1 = loadImage("Enemy.png");
+    x = width/2/2;
+    y = height/2/2;
     w = 50;
     h = 50;
     health = 100;

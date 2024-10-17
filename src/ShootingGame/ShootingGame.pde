@@ -1,5 +1,5 @@
-// Title
-Bullets b1;
+// Title | Levi Dorval | Oct 17 2024|
+
 int level;
 ArrayList<Bullets> bullets = new ArrayList<Bullets>();
 ArrayList<Enemy> enemy = new ArrayList<Enemy>();
@@ -8,6 +8,8 @@ ArrayList<Enemy> enemy = new ArrayList<Enemy>();
 //ArrayList<Timer> timer = new ArrayList<Timer>();
 //ArrayList<Map> map = new ArrayList<map>();
 Player p1;
+Enemy e1;
+Bullets b1;
 boolean play;
 PImage start1;
 
@@ -18,6 +20,7 @@ void setup() {
   play = false;
   start1 = loadImage("StartPlayer.png");
   p1 = new Player();
+  e1 = new Enemy();
 }
 void draw() {
   if (play == false) {
@@ -27,6 +30,7 @@ void draw() {
     background(127);
     p1.display();
     b1.display();
+    e1.display();
   }
 }
 
