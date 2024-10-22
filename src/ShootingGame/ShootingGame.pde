@@ -32,7 +32,7 @@ void draw() {
   } else {
     // You are playing the game!
     PImage img;
-    img = loadImage("New Piskel.png");
+    img = loadImage("Map.png");
     background(img);    
 p1.display();
     b1.display();
