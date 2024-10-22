@@ -31,8 +31,10 @@ void draw() {
     startScreen();
   } else {
     // You are playing the game!
-    background(127);
-    p1.display();
+    PImage img;
+    img = loadImage("New Piskel.png");
+    background(img);    
+p1.display();
     b1.display();
     e1.display();
     e1.move();
