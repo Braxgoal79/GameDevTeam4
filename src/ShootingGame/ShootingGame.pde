@@ -35,6 +35,7 @@ void draw() {
     p1.display();
     b1.display();
     e1.display();
+    e1.move();
     w1.display();
     
   }
