@@ -11,11 +11,13 @@ Player p1;
 Enemy e1;
 Bullets b1;
 Guns w1;
+Timer t1;
 boolean play;
 PImage start1;
 
 void setup() {
   size (500, 500);
+  t1 = new Timer(500);
   level = 1;
   b1 = new Bullets();
   play = false;
@@ -34,10 +36,20 @@ void draw() {
     b1.display();
     e1.display();
     w1.display();
+    
   }
 }
 
 void keyPressed() {
+  if(key == 'w') {
+    p1.move('u');
+  } else if(key == 's') {
+    p1.move('d');
+  } else if(key == 'd') {
+    p1.move('r');
+  }else if(key == 'a') {
+    p1.move('l');
+  }
 }
 
 void startScreen() {
