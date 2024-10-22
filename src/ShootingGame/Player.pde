@@ -22,6 +22,16 @@ class Player {
     //g1.resize(50);
     image(g1, x, y);
   }
-  void move() {
+  void move(char dir) {
+    if(dir == 'u') {
+    y -= 5;
+    } else if(dir == 'd'){
+      y += 5;
+    } else if(dir == 'r') {
+      x += 5;
+    } else if(dir == 'l') {
+      x -= 5;
+    }
   }
+ 
 }
