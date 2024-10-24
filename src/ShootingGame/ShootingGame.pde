@@ -11,7 +11,7 @@ Player p1;
 Enemy e1;
 Bullets b1;
 Guns w1;
-Timer t1;
+InfoPanel panel;
 boolean play;
 PImage start1;
 
@@ -25,6 +25,7 @@ void setup() {
   p1 = new Player();
   e1 = new Enemy();
   w1 = new Guns();
+  panel = new InfoPanel(0, 100, 3, 1); 
 }
 void draw() {
   if (play == false) {
@@ -39,6 +40,10 @@ p1.display();
     e1.display();
     e1.move();
     w1.display();
+    if (frameCount % 60 ==0) {
+      panel.updateScore(10);
+      panel.updateScore(-10);
+    }
     
   }
 }
