@@ -40,10 +40,9 @@ p1.display();
     e1.display();
     e1.move();
     w1.display();
-    if (frameCount % 60 ==0) {
       panel.updateScore(10);
       panel.updateScore(-10);
-    }
+      panel.display();
     
   }
 }
