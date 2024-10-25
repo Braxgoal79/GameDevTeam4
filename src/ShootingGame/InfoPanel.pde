@@ -30,9 +30,6 @@ class InfoPanel {
   }
 
   void display() {
-
-    fill(50, 50, 50, 150); 
-    rect(10, 10, 200, 100);
      
     fill(255);
     textSize(12);
