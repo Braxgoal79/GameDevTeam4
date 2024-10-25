@@ -29,6 +29,6 @@ class Enemy {
   }
   void move() {
     x = x + 1;
-y = y + 1
+y = y + 1;
   }
 }
