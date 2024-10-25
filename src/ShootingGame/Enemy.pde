@@ -1,4 +1,4 @@
-// Mr kapptie | 3 Oct 2024 | Levi Dorval |
+// Hongwen | 3 Oct 2024 | Levi Dorval |
 class Enemy {
   // Member Variables
   PImage g1;
