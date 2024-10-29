@@ -2,18 +2,24 @@
 class Player {
   // Member Variables
   PImage g1;
-  int x, y, w, h;
   float health, speed;
+  float x, y;
+  float velocityX, velocityY;
+  float acceleration = 4;
+  float maxSpeed = 10;
+  float friction = 0.9;
+  float h, w;
+  
 
   // Constructor
-  Player() {
+  Player(float startX, float startY, float playerWidth, float playerHeight) {
     g1 = loadImage("Player.png");
-    x = width/2;
-    y = height/2;
-    w = 50;
-    h = 50;
-    health = 100;
-    speed = 5;
+    x = startX;
+    y = startY;
+    w = playerWidth;
+    h = playerHeight;
+    velocityX = 0;
+    velocityY = 0;
   }
 
   // Member Methods
@@ -22,16 +28,19 @@ class Player {
     //g1.resize(50);
     image(g1, x, y);
   }
-  void move(char dir) {
-    if(dir == 'u') {
-    y -= 5;
-    } else if(dir == 'd'){
-      y += 5;
-    } else if(dir == 'r') {
-      x += 5;
-    } else if(dir == 'l') {
-      x -= 5;
-    }
-  }
+ void update() {
+   x += velocityX;
+   y += velocityY;
+   
+   velocityX *= friction;
+   velocityY *= friction;
+   
+   velocityX = constrain(velocityX, -maxSpeed, maxSpeed);
+   velocityY = constrain(velocityY, -maxSpeed, maxSpeed);
+ }
+ void applyForce(float forceX, float forceY) {
+   velocityX += forceX * acceleration;
+   velocityY += forceY * acceleration;
+ }
  
 }
