@@ -3,22 +3,32 @@ class Enemy {
   // Member Variables
   PImage g1;
   int x, y, w, h;
-  float health, speed, damage;
+  float health, speed, damage, r;
   boolean alive;
   char type;
 
   // Constructor
   Enemy() {
     g1 = loadImage("Enemy.png");
-    x = width/2/2;
+    r = 10;
+    x = int(random(width));
     y = height/2/2;
     w = 50;
     h = 50;
     health = 100;
-    speed = 5;
+    speed = random(1,5);
     damage = 10;
     alive = true;
     type = 'b';
+  }
+  
+   boolean reachedBottom() {
+    // If we go a little beyond the bottom
+    if (y > height + r*4) { 
+      return true;
+    } else {
+      return false;
+    }
   }
 
   // Member Methods
@@ -28,7 +38,6 @@ class Enemy {
     image(g1, x, y);
   }
   void move() {
-    x = x + 1;
-y = y + 1;
+    x = x + int(speed);
   }
 }
