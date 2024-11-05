@@ -1,4 +1,6 @@
 // Title | Levi Dorval | Oct 17 2024|
+import processing.sound.*;
+SoundFile steps;
 
 int level;
 ArrayList<Bullets> bullets = new ArrayList<Bullets>();
@@ -26,6 +28,8 @@ void setup() {
   e1 = new Enemy();
   w1 = new Guns();
   panel = new InfoPanel(0, 100, 3, 1);
+  steps = new SoundFile(this, "walking.wav");
+
 }
 void draw() {
   if (play == false) {
@@ -47,10 +51,10 @@ void draw() {
   }
 }
 void keyPressed() {
-  if (key == 'w') p1.applyForce(0, -1);
-  if (key == 's') p1.applyForce(0, 1);
-  if (key == 'a') p1.applyForce(-1, 0);
-  if (key == 'd') p1.applyForce(1, 0);
+  if (key == 'w') {p1.applyForce(0, -1); steps.play();}
+  if (key == 's') {p1.applyForce(0, 1); steps.play();}
+  if (key == 'a') {p1.applyForce(-1, 0); steps.play();}
+  if (key == 'd') {p1.applyForce(1, 0); steps.play();}
 }
 
 void startScreen() {
