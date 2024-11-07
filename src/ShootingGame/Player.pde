@@ -5,9 +5,9 @@ class Player {
   float health, speed;
   float x, y;
   float velocityX, velocityY;
-  float acceleration = 4;
+  float acceleration = 5;
   float maxSpeed = 10;
-  float friction = 0.9;
+  float friction = 0.8;
   float h, w;
   
 
