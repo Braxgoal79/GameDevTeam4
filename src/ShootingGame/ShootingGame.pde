@@ -18,7 +18,7 @@ boolean play;
 PImage start1;
 
 void setup() {
-  size (500, 500);
+  size (1100, 1100);
   //t1 = new Timer(500);
   level = 1;
   b1 = new Bullets();
