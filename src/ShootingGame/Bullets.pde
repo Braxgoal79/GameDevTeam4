@@ -26,3 +26,12 @@ class Bullets {
     x = x + 1;
   }
 }
+int mouseX = 100; 
+int mouseY = 100; 
+int speed = 3; 
+ 
+void mousePressed() {
+  mouseX = mouseX;
+  mouseY = mouseY;
+}
+
