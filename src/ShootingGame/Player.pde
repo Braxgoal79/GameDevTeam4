@@ -2,7 +2,7 @@
 class Player {
   // Member Variables
   PImage g1;
-  float health, speed;
+  float health, speed = 2.0;
   float x, y;
   float velocityX, velocityY;
   float acceleration = 5;
@@ -10,6 +10,14 @@ class Player {
   float friction = 0.8;
   float h, w;
   
+  boolean intersect(Player p1) {
+    float d = dist(x, y, p1.x, p1.y);
+    if (d<40) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 
   // Constructor
   Player(float startX, float startY, float playerWidth, float playerHeight) {
