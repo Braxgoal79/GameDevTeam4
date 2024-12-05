@@ -2,13 +2,14 @@
 import processing.sound.*;
 SoundFile steps;
 
-int level;
+int level, welcomeCounter;
 ArrayList<Bullets> bullets = new ArrayList<Bullets>();
 ArrayList<Enemy> enemy = new ArrayList<Enemy>();
 //ArrayList<Guns> guns = new ArrayList<Guns>();
 //ArrayList<Player> player = new ArrayList<Player>();
 //ArrayList<Timer> timer = new ArrayList<Timer>();
 //ArrayList<Map> map = new ArrayList<map>();
+Timer wTime;
 Player p1;
 Enemy e1;
 Bullets b1;
@@ -22,6 +23,9 @@ void setup() {
   //t1 = new Timer(500);
   level = 1;
   b1 = new Bullets();
+  welcomeCounter = 0;
+  wTime = new Timer(4000);
+  wTime.start();
   play = false;
   start1 = loadImage("StartPlayer.png");
   p1 = new Player(100,100,0,0);
